@@ -1,3 +1,0 @@
-# GEODUDE
-> Team!
-`works.ts`  
