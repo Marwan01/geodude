@@ -5,6 +5,8 @@
  * @param {H.geo.Point} coordinate  The location of the marker
  * @param {String} html             Data associated with the marker
  */
+
+
 function addMarkerToGroup(group, coordinate, html) {
   var marker = new H.map.Marker(coordinate);
   // add custom data to the marker
@@ -74,7 +76,17 @@ function addInfoBubble(map) {
 
 
 function getnews(city){
-  return 
+  var url = 'https://newsapi.org/v2/top-headlines?' + 
+  'q=' + city + "&'" +
+  'from=2018-09-14&' +
+  'sortBy=popularity&' +
+  'country=us&' +
+  'apiKey=7b5f48dbc9e348db8616f70b532aff14';
+  var req = new Request(url);
+  fetch(req)
+  .then(function(response) {
+  console.log(response.json());
+  })
 }
 /**
  * Boilerplate map initialization code starts below:
