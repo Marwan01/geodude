@@ -18,7 +18,7 @@ function addMarkerToGroup(group, coordinate, html) {
 function getnews(city){
   var obj;
   // var url = "https://newsapi.org/v2/top-headlines?country=jp&apiKey=7b5f48dbc9e348db8616f70b532aff14";
-  var url ='https://newsapi.org/v2/everything?' + 
+  var url ='https://newsapi.org/v2/top-headlines?' + 
   'q=' + city + '&' +
   // 'from=2018-09-14&' +
   // 'sortBy=popularity&' +
@@ -28,10 +28,15 @@ function getnews(city){
   let newArray = [];
   fetch(req)
   .then(function(response) {
+<<<<<<< HEAD
     while(response.json().hasNext()) {
       response.json().next
     }
     console.log(response.json());
+=======
+    result = resolve(response);
+    console.log(result.articles);
+>>>>>>> master
     // var o = response.json();
     // obj = JSON.parse(o);
   })
