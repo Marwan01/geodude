@@ -47,7 +47,7 @@ var platform = new H.service.Platform({
 var defaultLayers = platform.createDefaultLayers();
 
 // initialize a map - this map is centered over Europe
-var map = new H.Map(document.getElementById('map'),
+var map = new H.Map(document.getElementById('map1'),
   defaultLayers.normal.map,{
   center: {lat: 53.430, lng: -2.961},
   zoom: 7
