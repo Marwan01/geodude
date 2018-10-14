@@ -25,20 +25,14 @@ function getnews(city){
   // 'country=us&' +
   'apiKey=7b5f48dbc9e348db8616f70b532aff14';
   var req = new Request(url);
-  let newArray = [];
-  fetch(req)
-  .then(function(response) {
-<<<<<<< HEAD
-    while(response.json().hasNext()) {
-      response.json().next
-    }
-    console.log(response.json());
-=======
-    result = resolve(response);
-    console.log(result.articles);
->>>>>>> master
-    // var o = response.json();
-    // obj = JSON.parse(o);
+  var x =fetch(req)
+  .then((response) => response.json())
+  .then((responseJSON) => {
+    let newRes = responseJSON;
+    // console.log(newRes.articles[0])
+    // let newDev = $("body").add("div")
+    // newDev.add("p").text(newRes.articles[0].title)
+    alert(newRes.articles[0].title)
   })
   // console.log(obj);
 }
@@ -149,34 +143,9 @@ console.log(promise1);
 // expected output: [object Promise] 
    */
   
-  
-  function getnews(city){
-    var url = "https://newsapi.org/v2/top-headlines?country=jp&apiKey=7b5f48dbc9e348db8616f70b532aff14";
-    //  'https://newsapi.org/v2/top-headlines?' + 
-    // 'q=' + city + '&' +
-    // 'from=2018-09-14&' +
-    // 'sortBy=popularity&' +
-    // 'country=us&' +
-    // 'apiKey=7b5f48dbc9e348db8616f70b532aff14';
-    var req = new Request(url);
-    // let newArray = [];
-    // let finalResponse = '';
-    // fetch(req)
-    // .then(res => {
-    //   console.log(res.json())
-    // })
-    //
 
-    var x =fetch(req)
-    .then((response) => response.json())
-    .then((responseJSON) => {
-      let newRes = responseJSON;
-      console.log(newRes.articles[0])
-      let newDev = $("body").add("div")
-      newDev.add("p").text(newRes.articles[0].title)
-    })
     //
-  }
+  
   /**
    * Boilerplate map initialization code starts below:
    */
