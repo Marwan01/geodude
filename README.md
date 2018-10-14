@@ -35,7 +35,7 @@
 </p>
 <p>
     <strong>CHALLENGES I RAN INTO:</strong>
-</p>
+</p> 
 <p>
     Some challenges that we faced during the creation of this project were:
     Coming up with an original project idea. Along with trying to properly
