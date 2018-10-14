@@ -33,55 +33,49 @@ function addInfoBubble(map) {
     // show info bubble
     ui.addBubble(bubble);
   }, false);
-
-  addMarkerToGroup(group, {lat:53.439, lng:-2.221},
-    '<div><a href=\'http://www.mcfc.co.uk\' >Manchester City</a>' +
-    '</div><div >City of Manchester Stadium<br>Capacity: 48,000</div>');
-
-  addMarkerToGroup(group, {lat:53.430, lng:-2.961},
-    '<div ><a href=\'http://www.liverpoolfc.tv\' >Liverpool</a>' +
-    '</div><div >Anfield<br>Capacity: 45,362</div>');
     addMarkerToGroup(group, {lat:53.439, lng:-2.221},
-      '<div><a href=\'http://www.mcfc.co.uk\' >Manchester City</a>');
-  
+      '<div onclick=getnews(\'Manchester City\') ><a href=\'http://www.mcfc.co.uk\' >Manchester City</a>');
+
     addMarkerToGroup(group, {lat:53.430, lng:-2.961},
-      '<div ><a href=\'http://www.liverpoolfc.tv\' >Liverpool</a>');
+      '<div onclick=getnews(\'Liverpool\')><a href=\'http://www.liverpoolfc.tv\' >Liverpool</a>');
       
       addMarkerToGroup(group, {lat:52.520, lng:13.404},
-      '<div ><a href=\'http://www.liverpoolfc.tv\' >Berlin</a>');
+      '<div onclick=getnews(\'Berlin\')><a href=\'http://www.liverpoolfc.tv\' >Berlin</a>');
       
       addMarkerToGroup(group, {lat:36.806, lng:10.181},
-      '<div ><a href=\'http://www.liverpoolfc.tv\' >Tunis</a>');
+      '<div onclick=getnews(\'Tunis\')><a href=\'http://www.liverpoolfc.tv\' >Tunis</a>');
       
       addMarkerToGroup(group, {lat:41.902, lng:12.497},
-      '<div ><a href=\'http://www.liverpoolfc.tv\' >Rome</a>');
+      '<div onclick=getnews(\'Rome\')><a href=\'http://www.liverpoolfc.tv\' >Rome</a>');
       
       addMarkerToGroup(group, {lat:31.230, lng:121.473},
-      '<div ><a href=\'http://www.liverpoolfc.tv\' >Shangai</a>');
+      '<div onclick=getnews(\'Shangai\')><a href=\'http://www.liverpoolfc.tv\' >Shangai</a>');
       
       addMarkerToGroup(group, {lat:19.075, lng:72.877},
-      '<div ><a href=\'http://www.liverpoolfc.tv\' >Mumbai</a>');
+      '<div onclick=getnews(\'Mumbai\')><a href=\'http://www.liverpoolfc.tv\' >Mumbai</a>');
       
       addMarkerToGroup(group, {lat:28.714, lng:77.209},
-      '<div ><a href=\'http://www.liverpoolfc.tv\' >New Delhi</a>');
+      '<div onclick=getnews(\'New Delhi\')><a href=\'http://www.liverpoolfc.tv\' >New Delhi</a>');
       
       addMarkerToGroup(group, {lat:48.857, lng:2.352},
-      '<div ><a href=\'http://www.liverpoolfc.tv\' >Paris</a>');
+      '<div onclick=getnews(\'Paris\')><a href=\'http://www.liverpoolfc.tv\' >Paris</a>');
       
       addMarkerToGroup(group, {lat:41.385, lng:2.173},
-      '<div ><a href=\'http://www.liverpoolfc.tv\' >Barcelona</a>');
+      '<div onclick=getnews(\'Barcelona\')><a href=\'http://www.liverpoolfc.tv\' >Barcelona</a>');
       
       addMarkerToGroup(group, {lat:40.857, lng:-74.024},
-      '<div ><a href=\'http://www.liverpoolfc.tv\' >Moscow</a>');
+      '<div onclick=getnews(\'Moscow\')><a href=\'http://www.liverpoolfc.tv\' >Moscow</a>');
       
       addMarkerToGroup(group, {lat:4.710, lng:-74.072},
-      '<div ><a href=\'http://www.liverpoolfc.tv\' >Bogota</a>');
+      '<div onclick=getnews(\'Bogota\')><a href=\'http://www.liverpoolfc.tv\' >Bogota</a>');
   
 
 }
 
 
-
+function getnews(city){
+  return 
+}
 /**
  * Boilerplate map initialization code starts below:
  */
