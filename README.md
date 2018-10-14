@@ -1,5 +1,5 @@
 <p align="center">
-    <strong>GeoDude</strong>
+    <h1><strong>GeoDude</strong></h1>
 </p>
 <p>
     <strong>
