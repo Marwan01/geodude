@@ -36,52 +36,53 @@ function addInfoBubble(map) {
     ui.addBubble(bubble);
   }, false);
     addMarkerToGroup(group, {lat:53.439, lng:-2.221},
-      '<div onclick=getnews(\'Manchester City\') ><a href=\'http://www.mcfc.co.uk\' >Manchester City</a>');
+      `<button onclick="getnews(\'Manchester City\')">Manchester City</button>`);
 
     addMarkerToGroup(group, {lat:53.430, lng:-2.961},
-      '<div onclick=getnews(\'Liverpool\')><a href=\'http://www.liverpoolfc.tv\' >Liverpool</a>');
+      `<button onclick="getnews(\'Manchester City\')">Liverpool</button>`);
       
       addMarkerToGroup(group, {lat:52.520, lng:13.404},
-      '<div onclick=getnews(\'Berlin\')><a href=\'http://www.liverpoolfc.tv\' >Berlin</a>');
-      
+      `<button onclick="getnews(\'Berlin\')">Berlin</button>`);
+
       addMarkerToGroup(group, {lat:36.806, lng:10.181},
-      '<div onclick=getnews(\'Tunis\')><a href=\'http://www.liverpoolfc.tv\' >Tunis</a>');
+      `<button onclick="getnews(\'Tunis\')">Tunis</button>`);
       
       addMarkerToGroup(group, {lat:41.902, lng:12.497},
-      '<div onclick=getnews(\'Rome\')><a href=\'http://www.liverpoolfc.tv\' >Rome</a>');
+      `<button onclick="getnews(\'Rome\')">Rome</button>`);
       
       addMarkerToGroup(group, {lat:31.230, lng:121.473},
-      '<div onclick=getnews(\'Shangai\')><a href=\'http://www.liverpoolfc.tv\' >Shangai</a>');
+      `<button onclick="getnews(\'Shanghai\')">Shanghai</button>`);
       
       addMarkerToGroup(group, {lat:19.075, lng:72.877},
-      '<div onclick=getnews(\'Mumbai\')><a href=\'http://www.liverpoolfc.tv\' >Mumbai</a>');
+      `<button onclick="getnews(\'Mumbai\')">Mumbai</button>`);
       
       addMarkerToGroup(group, {lat:28.714, lng:77.209},
-      '<div onclick=getnews(\'New Delhi\')><a href=\'http://www.liverpoolfc.tv\' >New Delhi</a>');
+      `<button onclick="getnews(\'New Delhi\')">New Delhi</button>`);
       
       addMarkerToGroup(group, {lat:48.857, lng:2.352},
-      '<div onclick=getnews(\'Paris\')><a href=\'http://www.liverpoolfc.tv\' >Paris</a>');
+      `<button onclick="getnews(\'Paris\')">Paris</button>`);
       
       addMarkerToGroup(group, {lat:41.385, lng:2.173},
-      '<div onclick=getnews(\'Barcelona\')><a href=\'http://www.liverpoolfc.tv\' >Barcelona</a>');
+      `<button onclick="getnews(\'Barcelona\')">Barcelona</button>`);
       
       addMarkerToGroup(group, {lat:40.857, lng:-74.024},
-      '<div onclick=getnews(\'Moscow\')><a href=\'http://www.liverpoolfc.tv\' >Moscow</a>');
+      `<button onclick="getnews(\'Chicago\')">Chicago</button>`);
       
       addMarkerToGroup(group, {lat:4.710, lng:-74.072},
-      '<div onclick=getnews(\'Bogota\')><a href=\'http://www.liverpoolfc.tv\' >Bogota</a>');
+      `<button onclick="getnews(\'Bogota\')">Bogota</button>`);
   
 
 }
 
 
 function getnews(city){
-  var url = 'https://newsapi.org/v2/top-headlines?' + 
-  'q=' + city + "&'" +
-  'from=2018-09-14&' +
-  'sortBy=popularity&' +
-  'country=us&' +
-  'apiKey=7b5f48dbc9e348db8616f70b532aff14';
+  var url = "https://newsapi.org/v2/top-headlines?country=jp&apiKey=7b5f48dbc9e348db8616f70b532aff14";
+  //  'https://newsapi.org/v2/top-headlines?' + 
+  // 'q=' + city + '&' +
+  // 'from=2018-09-14&' +
+  // 'sortBy=popularity&' +
+  // 'country=us&' +
+  // 'apiKey=7b5f48dbc9e348db8616f70b532aff14';
   var req = new Request(url);
   fetch(req)
   .then(function(response) {
