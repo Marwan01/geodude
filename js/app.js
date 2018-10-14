@@ -30,9 +30,15 @@ function getnews(city){
   .then((responseJSON) => {
     let newRes = responseJSON;
     // console.log(newRes.articles[0])
-    // let newDev = $("body").add("div")
-    // newDev.add("p").text(newRes.articles[0].title)
-    alert(newRes.articles[0].title)
+    $(".H_ib_tail").text(newRes.articles[0].title).
+    css({
+      'background-color': '#000000', 
+      'font-size': '18px',
+      'width': '320px',
+      'height': '65px',
+      'padding': '10px'
+    }).toggle();
+    //alert(newRes.articles[0].title)
   })
   // console.log(obj);
 }
