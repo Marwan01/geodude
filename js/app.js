@@ -123,25 +123,6 @@ addInfoBubble(map);
   
   }
   
-  
-  function getnews(city){
-    var url = "https://newsapi.org/v2/top-headlines?country=jp&apiKey=7b5f48dbc9e348db8616f70b532aff14";
-    //  'https://newsapi.org/v2/top-headlines?' + 
-    // 'q=' + city + '&' +
-    // 'from=2018-09-14&' +
-    // 'sortBy=popularity&' +
-    // 'country=us&' +
-    // 'apiKey=7b5f48dbc9e348db8616f70b532aff14';
-    var req = new Request(url);
-    fetch(req)
-    .then(function(response) {
-    console.log(response.json());
-    })
-  }
-  /**
-   * Boilerplate map initialization code starts below:
-   */
-  
   // initialize communication with the platform
   var platform = new H.service.Platform({
     app_id: '{YOUR_APP_ID}',
