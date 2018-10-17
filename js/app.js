@@ -94,6 +94,9 @@ addInfoBubble(map);
         
         addMarkerToGroup(group, {lat:52.520, lng:13.404},
         `<button onclick="getnews(\'Berlin\')">Berlin</button>`);
+
+        addMarkerToGroup(group, {lat:38.627, lng:-90.1994},
+        `<button onclick="getnews(\'St. Louis\')">St. Louis</button>`);
   
         addMarkerToGroup(group, {lat:36.806, lng:10.181},
         `<button onclick="getnews(\'Tunis\')">Tunis</button>`);
@@ -117,38 +120,13 @@ addInfoBubble(map);
         `<button onclick="getnews(\'Barcelona\')">Barcelona</button>`);
         
         addMarkerToGroup(group, {lat:40.857, lng:-74.024},
-        `<button onclick="getnews(\'Chicago\')">Chicago</button>`);
+        `<button onclick="getnews(\'New York\')">New York</button>`);
         
         addMarkerToGroup(group, {lat:4.710, lng:-74.072},
         `<button onclick="getnews(\'Bogota\')">Bogota</button>`);
     
   
   }
-
-  /**
-   * 
-   *  
-  var promise1 = new Promise(function(resolve, reject) {
-  setTimeout(function() {
-    resolve('foo');
-  }, 300);
-});
-
-promise1.then(function(value) {
-  console.log(value);
-  // expected output: "foo"
-});
-
-console.log(promise1);
-// expected output: [object Promise] 
-   */
-  
-
-    //
-  
-  /**
-   * Boilerplate map initialization code starts below:
-   */
   
   // initialize communication with the platform
   var platform = new H.service.Platform({
