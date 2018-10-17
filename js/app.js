@@ -21,7 +21,7 @@ function getnews(city){
   var url ='https://newsapi.org/v2/top-headlines?' + 
   'q=' + city + '&' +
   // 'from=2018-09-14&' +
-  // 'sortBy=popularity&' +
+  'sortBy=popularity&' +
   // 'country=us&' +
   'apiKey=7b5f48dbc9e348db8616f70b532aff14';
   var req = new Request(url);
@@ -30,9 +30,17 @@ function getnews(city){
   .then((responseJSON) => {
     let newRes = responseJSON;
     // console.log(newRes.articles[0])
-    // let newDev = $("body").add("div")
-    // newDev.add("p").text(newRes.articles[0].title)
-    alert(newRes.articles[0].title)
+    // $(".H_ib_tail").text(newRes.articles[0].title).
+    // css({
+    //   'background-color': '#000000', 
+    //   'font-size': '18px',
+    //   'width': '320px',
+    //   'height': '65px',
+    //   'padding': '10px'
+    // }).toggle();
+    // $(".H_ib_tail").mousedown(this.hide());
+    let x = alert(newRes.articles[0].title, newRes.articles[0])
+    // x.title = newRes.articles[0].title;
   })
   // console.log(obj);
 }

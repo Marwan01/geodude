@@ -1,74 +1,84 @@
-# [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/)
-
-[Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
-
-## Preview
-
-[![Grayscale Preview](https://startbootstrap.com/assets/img/templates/grayscale.jpg)](https://blackrockdigital.github.io/startbootstrap-grayscale/)
-
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-grayscale/)**
-
-## Status
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-grayscale/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-grayscale.svg)](https://www.npmjs.com/package/startbootstrap-grayscale)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-grayscale.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-grayscale)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale?type=dev)
-
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/grayscale/)
-* Install via npm: `npm i startbootstrap-grayscale`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-grayscale.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-grayscale)
-
-## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
-
-#### Gulp Tasks
-
-- `gulp` the default task that builds everything
-- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-- `gulp js` minifies the themes JS file
-- `gulp vendor` copies dependencies from node_modules to the vendor directory
-
-You must have npm and Gulp installed globally on your machine in order to use these features.
-
-## Troubleshooting and Help
-
-Start Bootstrap has a public Slack channel which is a great place to ask questions about this template and all things related to Start Bootstrap.
-
-**[Click here to join the Slack channel!](https://startbootstrap-slack.herokuapp.com/)**
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-grayscale/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/grayscale/).
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+<p align="center">
+    <h1><strong>GeoDude</strong></h1>
+</p>
+<p>
+    <strong>
+        <br/>
+    </strong>
+</p>
+<p>
+    <strong>INSPIRATION:</strong>
+</p>
+<p>
+    To be able to provide an environment were geography, media, and journalism
+    can coexist. Together creating a union that will help spread global news
+    instantaneously.
+</p>
+<p>
+    <strong>WHAT IT DOES: </strong>
+</p>
+<p>
+    Giving online users a better medium to access the latest global news. As an
+    interactive map, selecting a geographical location will provide the users
+    with the most recent news outlets for that selected area. Not only does
+    this service provide a fun interactive experience, but it also exposes
+    users to geographical locations and news they might not have otherwise been
+    exposed to.
+</p>
+<p>
+    <strong>HOW WE BUILT IT:</strong>
+</p>
+<p>
+    Using the API services provided by here.com we were able to implicate the
+    interactive mapping experience. Some code languages that we incorporated:
+    JavaScript, HTML, CSS, and BootStrap.
+</p>
+<p>
+    <strong>CHALLENGES WE RAN INTO:</strong>
+</p> 
+<p>
+    Some challenges that we faced during the creation of this project were:
+    Coming up with an original project idea. Along with trying to properly
+    connect the API services so that the newest articles would be redirected to
+    their corresponding locations.
+</p>
+<p>
+    <strong>ACCOMPLISHMENTS</strong>
+    <strong>: </strong>
+</p>
+<p>
+    · Connecting here.com’s innovating and intelligent solutions to promote
+    worldwide news and media awareness
+</p>
+<p>
+    · Launching our project into google cloud
+</p>
+<p>
+    · Cooperating many ideas into one fluent one
+</p>
+<p>
+    <strong>WHAT WE LEARNED:</strong>
+</p>
+<p>
+    · Asking for help makes the experience grow
+</p>
+<p>
+    · There is always something that will go wrong
+</p>
+<ul>
+    <li>
+        Plans are always changing
+    </li>
+</ul>
+<p>
+    · The smallest victories make the biggest difference
+</p>
+<p>
+    <strong>WHAT’S NEXT FOR THE GEODUDE:</strong>
+</p>
+<p>
+    Ideally it would be nice to have be able to incorporate live video to the
+    webpage so that users have access to live coverage as news breaks through.
+    This would offer an experience that is unbiased and up to date on all
+    current global news.
+</p>
