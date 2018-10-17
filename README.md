@@ -34,7 +34,7 @@
     JavaScript, HTML, CSS, and BootStrap.
 </p>
 <p>
-    <strong>CHALLENGES I RAN INTO:</strong>
+    <strong>CHALLENGES WE RAN INTO:</strong>
 </p> 
 <p>
     Some challenges that we faced during the creation of this project were:
