@@ -131,7 +131,10 @@ addInfoBubble(map);
         `<button onclick="getnews(\'New York\')">New York</button>`);
         
         addMarkerToGroup(group, {lat:4.710, lng:-74.072},
-        `<button onclick="getnews(\'Bogota\')">Bogota</button>`);
+          `<button onclick="getnews(\'Bogota\')">Bogota</button>`);
+
+        addMarkerToGroup(group, {lat:-33.8688, lng:151.2093},
+          `<button onclick="getnews(\'Sydney\')">Sydney</button>`);
     
   
   }
