@@ -7,6 +7,7 @@
  */
 
 
+
 function addMarkerToGroup(group, coordinate, html) {
     var marker = new H.map.Marker(coordinate);
     // add custom data to the marker
@@ -17,7 +18,6 @@ function addMarkerToGroup(group, coordinate, html) {
 
 function getnews(city){
   var obj;
-  // var url = "https://newsapi.org/v2/top-headlines?country=jp&apiKey=7b5f48dbc9e348db8616f70b532aff14";
   var url ='https://newsapi.org/v2/top-headlines?' + 
   'q=' + city + '&' +
   'sortBy=popularity&' +
@@ -27,9 +27,21 @@ function getnews(city){
   .then((response) => response.json())
   .then((responseJSON) => {
     let newRes = responseJSON;
-
-    alert(newRes.articles[0].title, newRes.articles[0])
-  })
+    swal({
+      title: newRes.articles[0].title,
+      text: newRes.articles[0].content,
+      icon: "info",
+      buttons: [true,"See Full Article"],
+    }).then(okay => {
+      if (okay) {
+        window.location.href = newRes.articles[0].url;
+      }
+    });
+  }).catch(swal({
+    title: "Error",
+    text: "No News at the moment. Try again later.",
+    icon: "warning"
+  }))
 }
 
 // initialize communication with the platform
@@ -44,8 +56,8 @@ var defaultLayers = platform.createDefaultLayers();
 // initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map1'),
   defaultLayers.normal.map,{
-  center: {lat: 53.430, lng: -2.961},
-  zoom: 4
+  center: {lat: 0, lng: 0},
+  zoom: 2
 });
 
 // MapEvents enables the event system
@@ -120,7 +132,35 @@ addInfoBubble(map);
         addMarkerToGroup(group, {lat:-33.8688, lng:151.2093},
           `<button onclick="getnews(\'Sydney\')">Sydney</button>`);
     
-  
+        addMarkerToGroup(group, {lat:-30.559483, lng:22.937506},
+          `<button onclick="getnews(\'South Africa\')">South Africa</button>`);
+
+        addMarkerToGroup(group, {lat:-35.675148, lng:-71.542969},
+          `<button onclick="getnews(\'Chile\')">Chile</button>`);
+
+        addMarkerToGroup(group, {lat:-14.235004, lng:-51.925282},
+          `<button onclick="getnews(\'Brasil\')">Brasil</button>`);
+
+        addMarkerToGroup(group, {lat:45.501690, lng:-73.567253},
+          `<button onclick="getnews(\'Montreal\')">Montreal</button>`);
+
+        addMarkerToGroup(group, {lat:59.938480, lng:30.312481},
+          `<button onclick="getnews(\'Saint Petersbourg\')">Saint Petersbourg</button>`);
+
+        addMarkerToGroup(group, {lat:53.349804, lng:-6.260310},
+          `<button onclick="getnews(\'Dublin\')">Dublin</button>`);
+
+       addMarkerToGroup(group, {lat:9.081999, lng:8.675277},
+          `<button onclick="getnews(\'Nigeria\')">Nigeria</button>`);
+
+         addMarkerToGroup(group, {lat:41.299496, lng:69.240074},
+            `<button onclick="getnews(\'Tashkent\')">Tashkent</button>`);
+
+        addMarkerToGroup(group, {lat:47.606209, lng:-122.332069},
+          `<button onclick="getnews(\'Seattle\')">Seattle</button>`);
+
+        addMarkerToGroup(group, {lat:37.774929, lng:-122.419418},
+          `<button onclick="getnews(\'San Francisco\')">San Francisco</button>`);
   }
   
   // initialize communication with the platform
@@ -135,7 +175,7 @@ addInfoBubble(map);
   // initialize a map - this map is centered over Europe
   var map = new H.Map(document.getElementById('map'),
     defaultLayers.normal.map,{
-    center: {lat: 53.430, lng: -2.961},
+    center: {lat: 0, lng: 0},
     zoom: 7
   });
   
