@@ -84,4 +84,8 @@
     current global news.
 </p>
 
+    <strong>
+        Screenshot:
+    </strong>
+    
 ![Screenshot](/img/pic.png)
