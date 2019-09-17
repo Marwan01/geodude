@@ -1,12 +1,12 @@
-runtime: python27
+runtime: php55
 api_version: 1
 threadsafe: true
 
 handlers:
 - url: /
-  static_files: www/index.html
-  upload: www/index.html
+  static_files: index.html
+  upload: index.html
 
 - url: /(.*)
-  static_files: www/\1
-  upload: www/(.*)
+  static_files: \1
+  upload: (.*)
