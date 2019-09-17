@@ -20,33 +20,17 @@ function getnews(city){
   // var url = "https://newsapi.org/v2/top-headlines?country=jp&apiKey=7b5f48dbc9e348db8616f70b532aff14";
   var url ='https://newsapi.org/v2/top-headlines?' + 
   'q=' + city + '&' +
-  // 'from=2018-09-14&' +
   'sortBy=popularity&' +
-  // 'country=us&' +
   'apiKey=7b5f48dbc9e348db8616f70b532aff14';
   var req = new Request(url);
   var x =fetch(req)
   .then((response) => response.json())
   .then((responseJSON) => {
     let newRes = responseJSON;
-    // console.log(newRes.articles[0])
-    // $(".H_ib_tail").text(newRes.articles[0].title).
-    // css({
-    //   'background-color': '#000000', 
-    //   'font-size': '18px',
-    //   'width': '320px',
-    //   'height': '65px',
-    //   'padding': '10px'
-    // }).toggle();
-    // $(".H_ib_tail").mousedown(this.hide());
-    let x = alert(newRes.articles[0].title, newRes.articles[0])
-    // x.title = newRes.articles[0].title;
+
+    alert(newRes.articles[0].title, newRes.articles[0])
   })
-  // console.log(obj);
 }
-/**
- * Boilerplate map initialization code starts below:
- */
 
 // initialize communication with the platform
 var platform = new H.service.Platform({
@@ -61,7 +45,7 @@ var defaultLayers = platform.createDefaultLayers();
 var map = new H.Map(document.getElementById('map1'),
   defaultLayers.normal.map,{
   center: {lat: 53.430, lng: -2.961},
-  zoom: 7
+  zoom: 4
 });
 
 // MapEvents enables the event system
