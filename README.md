@@ -83,3 +83,5 @@
     This would offer an experience that is unbiased and up to date on all
     current global news.
 </p>
+
+![Screenshot](/img/pic.png)
